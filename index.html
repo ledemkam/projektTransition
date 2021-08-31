@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <title>LoremAgentur</title>
+      <!--googgleapi-->
+      <link
+         href="https://fonts.googleapis.com/css?family=Abril+Fatface"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css?family=Aleo"
+         rel="stylesheet"
+      />
+
+      <!--font-awesome-->
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+
+      <!--greensock-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+   </head>
+   <body>
+      <div class="links">
+         <h2>Agentur</h2>
+      </div>
+      <div class="rechts">
+         <h2>Lorem</h2>
+      </div>
+
+      <h1>Lorem, Ihr Web Agentur</h1>
+
+      <div class="nav">
+         <ul>
+            <li>Home</li>
+            <li>Team</li>
+            <li>Agentur</li>
+            <li>Projekten</li>
+            <li>Kontakt</li>
+         </ul>
+      </div>
+
+      <div class="social">
+         <ul>
+            <li><i class="fa fa-facebook"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+            <li><i class="fa fa-behance"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+         </ul>
+      </div>
+
+      <script type="text/javascript">
+         TweenMax.to('.links', 2, {
+            delay: 1.5,
+            top: '-150%',
+            ease: Expo.easeInOut,
+         });
+         TweenMax.to('.links h2', 2, {
+            delay: 1,
+            opacity: 0,
+            y: -100,
+            ease: Expo.easeInOut,
+         });
+
+         TweenMax.to('.rechts', 2, {
+            delay: 2.5,
+            top: '+100%',
+            ease: Expo.easeInOut,
+         });
+         TweenMax.to('.rechts h2', 2, {
+            delay: 2,
+            opacity: 0,
+            y: +60,
+            ease: Expo.easeInOut,
+         });
+
+         TweenMax.from('.nav', 2, {
+            delay: 3,
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut,
+         });
+         TweenMax.from('.social', 2, {
+            delay: 3,
+            opacity: 0,
+            y: 360,
+            ease: Expo.easeInOut,
+         });
+         TweenMax.from('h1', 2, {
+            delay: 3,
+            opacity: 0,
+            x: 360,
+            ease: Expo.easeInOut,
+         });
+      </script>
+   </body>
+</html>
